@@ -1,0 +1,19 @@
+[package]
+name = "my-project"
+version = "0.1.0"
+authors = ["tomevardasca"]
+license = "MIT"
+build = "build.rs"
+
+[lib]
+name = "my_project"
+crate-type = ["dylib"]
+
+[build-dependencies]
+neon-build = "0.1.23"
+
+[dependencies]
+neon = "0.1.23"
+rayon = "*"
+time = "*"
+num  = "*"

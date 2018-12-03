@@ -1,0 +1,13 @@
+[package]
+name = "wasm-sample"
+version = "0.1.0"
+authors = ["tomevardasca"]
+
+[lib]
+crate-type = ["cdylib"]
+
+[dependencies]
+wasm-bindgen="0.2"
+rayon = "*"
+time = "*"
+num  = "*"

@@ -1,0 +1,15 @@
+{
+  "name": "my-project",
+  "version": "0.1.0",
+  "description": "",
+  "main": "lib/index.js",
+  "author": "tomevardasca",
+  "license": "MIT",
+  "dependencies": {
+    "neon-cli": "^0.1.23"
+  },
+  "scripts": {
+    "install": "neon build",
+    "start": "neon build && node ./index.js"
+  }
+}

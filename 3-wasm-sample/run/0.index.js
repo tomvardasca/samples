@@ -1,0 +1,27 @@
+exports.ids = [0];
+exports.modules = {
+
+/***/ "./wasm_sample.js":
+/*!************************!*\
+  !*** ./wasm_sample.js ***!
+  \************************/
+/*! exports provided: factorial, factorial_recursion, factorial_par_iter, factorial_while, __wbindgen_log2 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"factorial\", function() { return factorial; });\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"factorial_recursion\", function() { return factorial_recursion; });\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"factorial_par_iter\", function() { return factorial_par_iter; });\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"factorial_while\", function() { return factorial_while; });\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"__wbindgen_log2\", function() { return __wbindgen_log2; });\n/* harmony import */ var _wasm_sample_bg__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./wasm_sample_bg */ \"./wasm_sample_bg.wasm\");\n/* tslint:disable */\n\n\nconst TextDecoder = typeof self === 'object' && self.TextDecoder\n    ? self.TextDecoder\n    : __webpack_require__(/*! util */ \"util\").TextDecoder;\n\nlet cachedDecoder = new TextDecoder('utf-8');\n\nlet cachegetUint8Memory = null;\nfunction getUint8Memory() {\n    if (cachegetUint8Memory === null ||\n        cachegetUint8Memory.buffer !== _wasm_sample_bg__WEBPACK_IMPORTED_MODULE_0__[\"memory\"].buffer)\n        cachegetUint8Memory = new Uint8Array(_wasm_sample_bg__WEBPACK_IMPORTED_MODULE_0__[\"memory\"].buffer);\n    return cachegetUint8Memory;\n}\n\nfunction getStringFromWasm(ptr, len) {\n    return cachedDecoder.decode(getUint8Memory().subarray(ptr, ptr + len));\n}\n\nlet cachedGlobalArgumentPtr = null;\nfunction globalArgumentPtr() {\n    if (cachedGlobalArgumentPtr === null)\n        cachedGlobalArgumentPtr = _wasm_sample_bg__WEBPACK_IMPORTED_MODULE_0__[\"__wbindgen_global_argument_ptr\"]();\n    return cachedGlobalArgumentPtr;\n}\n\nlet cachegetUint32Memory = null;\nfunction getUint32Memory() {\n    if (cachegetUint32Memory === null ||\n        cachegetUint32Memory.buffer !== _wasm_sample_bg__WEBPACK_IMPORTED_MODULE_0__[\"memory\"].buffer)\n        cachegetUint32Memory = new Uint32Array(_wasm_sample_bg__WEBPACK_IMPORTED_MODULE_0__[\"memory\"].buffer);\n    return cachegetUint32Memory;\n}\n\nfunction factorial(arg0) {\n    const retptr = globalArgumentPtr();\n    _wasm_sample_bg__WEBPACK_IMPORTED_MODULE_0__[\"factorial\"](retptr, arg0);\n    const mem = getUint32Memory();\n    const ptr = mem[retptr / 4];\n    const len = mem[retptr / 4 + 1];\n    const realRet = getStringFromWasm(ptr, len).slice();\n    _wasm_sample_bg__WEBPACK_IMPORTED_MODULE_0__[\"__wbindgen_free\"](ptr, len * 1);\n    return realRet;\n}\n\nfunction factorial_recursion(arg0) {\n    const retptr = globalArgumentPtr();\n    _wasm_sample_bg__WEBPACK_IMPORTED_MODULE_0__[\"factorial_recursion\"](retptr, arg0);\n    const mem = getUint32Memory();\n    const ptr = mem[retptr / 4];\n    const len = mem[retptr / 4 + 1];\n    const realRet = getStringFromWasm(ptr, len).slice();\n    _wasm_sample_bg__WEBPACK_IMPORTED_MODULE_0__[\"__wbindgen_free\"](ptr, len * 1);\n    return realRet;\n}\n\nfunction factorial_par_iter(arg0) {\n    const retptr = globalArgumentPtr();\n    _wasm_sample_bg__WEBPACK_IMPORTED_MODULE_0__[\"factorial_par_iter\"](retptr, arg0);\n    const mem = getUint32Memory();\n    const ptr = mem[retptr / 4];\n    const len = mem[retptr / 4 + 1];\n    const realRet = getStringFromWasm(ptr, len).slice();\n    _wasm_sample_bg__WEBPACK_IMPORTED_MODULE_0__[\"__wbindgen_free\"](ptr, len * 1);\n    return realRet;\n}\n\nfunction factorial_while(arg0) {\n    const retptr = globalArgumentPtr();\n    _wasm_sample_bg__WEBPACK_IMPORTED_MODULE_0__[\"factorial_while\"](retptr, arg0);\n    const mem = getUint32Memory();\n    const ptr = mem[retptr / 4];\n    const len = mem[retptr / 4 + 1];\n    const realRet = getStringFromWasm(ptr, len).slice();\n    _wasm_sample_bg__WEBPACK_IMPORTED_MODULE_0__[\"__wbindgen_free\"](ptr, len * 1);\n    return realRet;\n}\n\nfunction __wbindgen_log2(x) { return Math.log2(x); }\n\n\n\n//# sourceURL=webpack:///./wasm_sample.js?");
+
+/***/ }),
+
+/***/ "./wasm_sample_bg.wasm":
+/*!*****************************!*\
+  !*** ./wasm_sample_bg.wasm ***!
+  \*****************************/
+/*! exports provided: memory, __heap_base, __data_end, factorial, factorial_recursion, factorial_par_iter, factorial_while, __wbindgen_free, __wbindgen_global_argument_ptr */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("\"use strict\";\n// Instantiate WebAssembly module\nvar wasmExports = __webpack_require__.w[module.i];\n__webpack_require__.r(exports);\n// export exports from WebAssembly module\nfor(var name in wasmExports) if(name != \"__webpack_init__\") exports[name] = wasmExports[name];\n// exec imports from WebAssembly module (for esm order)\n/* harmony import */ var m0 = __webpack_require__(/*! ./wasm_sample */ \"./wasm_sample.js\");\n\n\n// exec wasm module\nwasmExports[\"__webpack_init__\"]()\n\n//# sourceURL=webpack:///./wasm_sample_bg.wasm?");
+
+/***/ })
+
+};;

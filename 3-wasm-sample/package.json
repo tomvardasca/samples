@@ -1,0 +1,11 @@
+{
+  "scripts": {
+    "build": "cargo +nightly build --target wasm32-unknown-unknown --release && wasm-bindgen target/wasm32-unknown-unknown/release/wasm_sample.wasm --out-dir . && webpack",
+    "start": "npm run build && node ./run index.js"
+  },
+  "devDependencies": {
+    "webpack": "^4.11.1",
+    "webpack-cli": "^2.0.10",
+    "webpack-dev-server": "^3.1.0"
+  }
+}
