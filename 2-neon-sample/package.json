@@ -6,10 +6,9 @@
   "author": "tomevardasca",
   "license": "MIT",
   "dependencies": {
-    "neon-cli": "^0.1.23"
+    "neon-cli": "^0.2.0"
   },
   "scripts": {
-    "install": "neon build",
-    "start": "neon build && node ./index.js"
+    "install": "neon build --release"
   }
 }

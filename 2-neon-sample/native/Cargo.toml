@@ -10,10 +10,10 @@ name = "my_project"
 crate-type = ["dylib"]
 
 [build-dependencies]
-neon-build = "0.1.23"
+neon-build = "0.2"
 
 [dependencies]
-neon = "0.1.23"
+neon = "0.2"
 rayon = "*"
 time = "*"
 num  = "*"

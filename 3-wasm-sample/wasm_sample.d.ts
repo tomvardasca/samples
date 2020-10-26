@@ -1,9 +1,9 @@
 /* tslint:disable */
-export function factorial(arg0: number): string;
+export function fib_iter(): number;
 
-export function factorial_recursion(arg0: number): string;
+export function fib_rec(): number;
 
-export function factorial_par_iter(arg0: number): string;
+export function fib_iter_par(): number;
 
-export function factorial_while(arg0: number): string;
+export function fib_rec_par(): number;
 
